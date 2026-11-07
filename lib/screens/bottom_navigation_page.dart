@@ -176,7 +176,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
 
   List<_NavigationItem> _getNavigationItems(bool isOfflineMode) {
     final items = <_NavigationItem>[
-      _NavigationItem(
+      const _NavigationItem(
         icon: FluentIcons.home_24_regular,
         selectedIcon: FluentIcons.home_24_filled,
         label: 'Home',
@@ -187,7 +187,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
     // Only add search tab in online mode
     if (!isOfflineMode) {
       items.add(
-        _NavigationItem(
+        const _NavigationItem(
           icon: FluentIcons.search_24_regular,
           selectedIcon: FluentIcons.search_24_filled,
           label: 'Search',
@@ -197,13 +197,13 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
     }
 
     items.addAll([
-      _NavigationItem(
+      const _NavigationItem(
         icon: FluentIcons.book_24_regular,
         selectedIcon: FluentIcons.book_24_filled,
         label: 'Library',
         shellIndex: 2,
       ),
-      _NavigationItem(
+      const _NavigationItem(
         icon: FluentIcons.person_24_regular,
         selectedIcon: FluentIcons.person_24_filled,
         label: 'Profile',

@@ -491,7 +491,7 @@ class _SearchPageState extends State<SearchPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Align(
+        const Align(
           alignment: Alignment.centerLeft,
           child: SkyfySectionLabel('Genre'),
         ),

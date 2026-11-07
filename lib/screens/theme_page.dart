@@ -266,7 +266,7 @@ class _ThemePageState extends State<ThemePage> {
                 fit: StackFit.expand,
                 children: [
                   if (hasImage)
-                    SkyfyBackdrop(
+                    const SkyfyBackdrop(
                       height: 150,
                       styleIndex: SkyfyBackdrop.customIndex,
                     )

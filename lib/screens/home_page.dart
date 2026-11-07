@@ -384,22 +384,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _buildCarouselView(
-    List<dynamic> playlists,
-    int itemCount,
-    double height,
-  ) {
-    return CarouselView.weighted(
-      flexWeights: const <int>[3, 2, 1],
-      itemSnapping: true,
-      onTap: (index) =>
-          context.push('/home/playlist/${playlists[index]['ytid']}'),
-      children: List.generate(itemCount, (index) {
-        return PlaylistCube(playlists[index], size: height * 2);
-      }),
-    );
-  }
-
   Widget _buildRecommendedSongsSection() {
     return AsyncLoader<List<dynamic>>(
       future: _recommendedSongsFuture,
@@ -624,7 +608,7 @@ class _RecentSongTile extends StatelessWidget {
     final artist = song['artist']?.toString() ?? '';
 
     Widget cover() {
-      final fallback = Container(
+      final fallback = ColoredBox(
         color: colorScheme.surfaceContainerHigh,
         child: Icon(
           FluentIcons.music_note_2_24_regular,

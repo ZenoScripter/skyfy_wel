@@ -34,7 +34,6 @@ import 'package:musify/services/playlist_download_service.dart';
 import 'package:musify/services/playlists_manager.dart';
 import 'package:musify/services/router_service.dart';
 import 'package:musify/services/settings_manager.dart';
-import 'package:musify/services/update_manager.dart';
 import 'package:musify/theme/app_colors.dart';
 import 'package:musify/theme/app_themes.dart';
 import 'package:musify/utilities/flutter_bottom_sheet.dart';
