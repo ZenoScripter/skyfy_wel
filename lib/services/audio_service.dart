@@ -906,7 +906,6 @@ class MusifyAudioHandler extends BaseAudioHandler implements AndroidAutoHost {
   }
 
   static const int _autoQueueRefillThreshold = 3;
-  static const int _autoQueueBatchSize = 8;
 
   /// Spotify-style autoplay: when fewer than a few songs are left in the
   /// queue, fills it with several songs similar to the one playing.
@@ -934,7 +933,6 @@ class MusifyAudioHandler extends BaseAudioHandler implements AndroidAutoHost {
           await getSimilarSongs(
             baseYtid,
             excludedYtIds: knownYtids,
-            limit: _autoQueueBatchSize,
           ).timeout(
             const Duration(seconds: 12),
             onTimeout: () {

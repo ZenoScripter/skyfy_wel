@@ -20,7 +20,6 @@
  */
 
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
-import 'package:flutter/foundation.dart';
 import 'package:go_router/go_router.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:musify/constants/version.dart';
@@ -87,7 +86,6 @@ class NavigationManager {
       initialLocation: splashPath,
       routes: routes,
       restorationScopeId: 'router',
-      debugLogDiagnostics: false,
       routerNeglect: true,
       redirect: (context, state) {
         // Handle offline mode redirects

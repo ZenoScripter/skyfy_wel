@@ -40,13 +40,13 @@ final onboardingDone = ValueNotifier<bool>(
       false,
 );
 
-/// Index of the selected decorative background (see [SkyfyBackdrop]).
+/// Index of the selected decorative background (see `SkyfyBackdrop`).
 final backdropStyle = ValueNotifier<int>(
   (Hive.box('settings').get('backdropStyle', defaultValue: 0) as int?) ?? 0,
 );
 
 /// User-picked background image (`data:` URL) used by backdrop style
-/// [SkyfyBackdrop.customIndex].
+/// `SkyfyBackdrop.customIndex`.
 final customBackdrop = ValueNotifier<String?>(
   Hive.box('settings').get('customBackdrop') as String?,
 );
