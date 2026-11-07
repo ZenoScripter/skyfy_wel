@@ -38,7 +38,6 @@ class SkyfyLogo extends StatelessWidget {
       'assets/icons/ic_launcher.png',
       width: size,
       height: size,
-      fit: BoxFit.contain,
       filterQuality: FilterQuality.medium,
     );
   }
